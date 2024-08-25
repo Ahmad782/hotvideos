@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI Warning</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .warning {
+            border: 5px solid red;
+            padding: 50px;
+            box-shadow: 0 0 10px red;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .fbi-logo {
+            margin-bottom: 30px;
+        }
+
+        .fbi-logo img {
+            max-width: 150px;
+        }
+
+        .alert-text {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .red-alert {
+            color: red;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning">
+        <div class="fbi-logo">
+            <img src="C:\Users\hclod\Downloads\fbi-logo.png" alt="FBI Logo">
+        </div>
+        <h1 class="red-alert">Warning: You Are Under Federal Investigation</h1>
+        <p class="alert-text">
+            Your actions have been traced, and your location is known.<br>
+            <span class="red-alert">Arrest warrants</span> have been issued in your name.<br>
+            <span class="red-alert">You are accused</span> of extreme happiness, which is a threat to national security.<br><br>
+            <strong>Your devices are being monitored, and agents are en route.</strong>
+        </p>
+    </div>
+</body>
+</html>
